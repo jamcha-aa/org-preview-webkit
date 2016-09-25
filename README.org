@@ -11,8 +11,8 @@
     xwidget-webkit-browser shows an output image as html.
   - This program (v0.1) is slightly useless for realtime editing with
     preview screen. The xwidget-webkit always steals the cursor when
-    viewing any file, which disturbs sequential writing.
-  - This program is useful such situations:
+    previewing the file, which disturbs sequential writing.
+  - This program is useful for such situations:
     + Checking README output before submitting
     + Checking picture layouts in html
     + Just to see beautiful webkit output in emacs 25 :)
@@ -25,7 +25,7 @@
 
 #+BEGIN_SRC emacs-lisp
 ;; auto-install
-(auto-install-from-url "https://raw.github.com/jamcha-aa/auto-org-md/master/org-preview-webkit.el")
+(auto-install-from-url "https://raw.github.com/jamcha-aa/org-preview-webkit/master/org-preview-webkit.el")
 #+END_SRC
 
 ** .emacs.d/init.el
