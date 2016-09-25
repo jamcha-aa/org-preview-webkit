@@ -1,0 +1,54 @@
+#+AUTHOR: jamcha (jamcha.aa@gmail.com)
+#+CATEGORY: org-preview-webkit-mode
+#+DATE: 
+#+OPTIONS: toc:nil
+#+OPTIONS: ^:{}
+#+TITLE: Org-preview-webkit-mode
+
+* About
+  - Org-preview-webkit-mode is a simple program that gives an preview
+    extension to org-mode. Anytime on saving, the built-in
+    xwidget-webkit-browser shows an output image as html.
+  - This program (v0.1) is slightly useless for realtime editing with
+    preview screen. The xwidget-webkit always steals the cursor when
+    viewing any file, which disturbs sequential writing.
+  - This program is useful such situations:
+    + Checking README output before submitting
+    + Checking picture layouts in html
+    + Just to see beautiful webkit output in emacs 25 :)
+
+** Requirements
+
+   xwidget-webkit-browser must be installed in emacs 25.1.1.
+
+** Install
+
+#+BEGIN_SRC emacs-lisp
+;; auto-install
+(auto-install-from-url "https://raw.github.com/jamcha-aa/auto-org-md/master/org-preview-webkit.el")
+#+END_SRC
+
+** .emacs.d/init.el
+
+#+BEGIN_SRC emacs-lisp
+(require 'org-preview-webkit)
+#+END_SRC
+
+* Usage
+  - In order to enable this function, *M-x org-preview-webkit*
+  - Anytime you save, html preview appears in the other frame. Key
+    bindings of the preview is the same with xwidget-webkit.
+  - Press *"q"* key to back to the org file.
+  - In the org frame, *M-x org-preview-webkit* toggles this function off.
+
+* Sample
+
+[[./sample.png]]
+
+* License
+  This program is licensed under GPL 3.
+
+* Acknowledgements
+
+  This program is strongly influenced by the insanity work of [[https://github.com/lujun9972/org-preview-html][org-preview-html]].
+
