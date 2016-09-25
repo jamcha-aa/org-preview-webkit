@@ -38,7 +38,7 @@
   - In order to enable this function, *M-x org-preview-webkit*
   - Anytime you save, html preview appears in the other frame. Key
     bindings of the preview is the same with xwidget-webkit.
-  - Press *"q"* key to back to the org file.
+  - Press "q" key to back to the org file.
   - In the org frame, *M-x org-preview-webkit* toggles this function off.
 
 * Sample
